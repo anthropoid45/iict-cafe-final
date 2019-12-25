@@ -1,4 +1,4 @@
-#Wed Dec 25 20:15:16 BDT 2019
+#Wed Dec 25 21:01:36 BDT 2019
 base.0=C\:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
