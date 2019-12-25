@@ -1,19 +1,14 @@
 package com.example.iictbeta2.AccActivity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.iictbeta2.AfterLoginActivity.LoggedinHomeActivity;
-import com.example.iictbeta2.MainActivity;
 import com.example.iictbeta2.R;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 

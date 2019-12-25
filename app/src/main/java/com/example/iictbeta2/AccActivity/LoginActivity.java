@@ -2,16 +2,15 @@ package com.example.iictbeta2.AccActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.iictbeta2.AfterLoginActivity.LoggedinHomeActivity;
 import com.example.iictbeta2.Main2Activity;
 import com.example.iictbeta2.R;
 import com.google.android.gms.tasks.OnCompleteListener;

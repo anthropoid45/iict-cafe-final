@@ -9,7 +9,6 @@
     <string name="todo">TODO</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="already_signed_up_log_in_to_your_account">Already signed up? Log in to your account.</string>
-    <string name="name">Name</string>
     <string name="logged_in_home">Logged in home</string>
     <string name="forgotpass_message">Please enter the email your account is registered with. A password reset link will be sent to that email address.</string>
     <string name="change_display_name">CHANGE DISPLAY NAME</string>
@@ -57,4 +56,7 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nmae">Nmae</string>
+    <string name="name">Name</string>
+    <string name="price">Price</string>
 </resources>
