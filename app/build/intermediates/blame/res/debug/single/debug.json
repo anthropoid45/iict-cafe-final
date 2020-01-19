@@ -1056,6 +1056,10 @@
         "source": "C:\\Users\\Towsif\\.gradle\\caches\\transforms-2\\files-2.1\\b52a33ec2ea4bfad58248332ba96e2a0\\appcompat-1.0.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_riceimg.jpg.flat",
+        "source": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\src\\main\\res\\drawable-v24\\riceimg.jpg"
+    },
+    {
         "merged": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_btn_unelevated_state_list_anim.xml.flat",
         "source": "C:\\Users\\Towsif\\.gradle\\caches\\transforms-2\\files-2.1\\42dfa75dd97f65b6f13ab377026b4c61\\material-1.0.0\\res\\animator\\mtrl_btn_unelevated_state_list_anim.xml"
     },
@@ -1332,6 +1336,10 @@
         "source": "C:\\Users\\Towsif\\.gradle\\caches\\transforms-2\\files-2.1\\8ef0dd1b827b6b28c1e9211227fa2d4c\\core-1.0.0\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
+        "merged": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_viewholder.xml.flat",
+        "source": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\src\\main\\res\\layout-v21\\viewholder.xml"
+    },
+    {
         "merged": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_icon.xml.flat",
         "source": "C:\\Users\\Towsif\\.gradle\\caches\\transforms-2\\files-2.1\\42dfa75dd97f65b6f13ab377026b4c61\\material-1.0.0\\res\\layout\\design_layout_tab_icon.xml"
     },
@@ -1550,6 +1558,10 @@
     {
         "merged": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_title_item.xml.flat",
         "source": "C:\\Users\\Towsif\\.gradle\\caches\\transforms-2\\files-2.1\\b52a33ec2ea4bfad58248332ba96e2a0\\appcompat-1.0.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_add_to_cart.xml.flat",
+        "source": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\src\\main\\res\\layout\\dialog_add_to_cart.xml"
     },
     {
         "merged": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_bg_color_selector.xml.flat",
@@ -2174,6 +2186,10 @@
     {
         "merged": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item.xml.flat",
         "source": "C:\\Users\\Towsif\\.gradle\\caches\\transforms-2\\files-2.1\\42dfa75dd97f65b6f13ab377026b4c61\\material-1.0.0\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\res\\merged\\debug\\layout_cartviweholder.xml.flat",
+        "source": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\src\\main\\res\\layout\\cartviweholder.xml"
     },
     {
         "merged": "C:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",

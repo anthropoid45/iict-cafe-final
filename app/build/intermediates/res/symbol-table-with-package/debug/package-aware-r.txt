@@ -1121,6 +1121,7 @@ drawable notify_panel_notification_icon_bg
 drawable profile
 drawable profile_icon
 drawable recharge
+drawable riceimg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user
@@ -1151,11 +1152,13 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addToCart
 id adjust_height
 id adjust_width
 id alertTitle
 id all
 id always
+id amount_view
 id async
 id auto
 id availability
@@ -1168,10 +1171,12 @@ id bottom
 id bottom_navigation
 id buttonPanel
 id cancel_action
+id cancel_button
 id card_image
 id card_name
 id card_price
 id cart
+id cart_recyclerView
 id cart_toolbar
 id center
 id centerCrop
@@ -1249,7 +1254,10 @@ id imageView
 id info
 id invisible
 id italic
+id item_amount_
 id item_name
+id item_name_
+id item_name_view
 id item_touch_helper_previous_elevation
 id khichuri_add_btn
 id khichuri_quantity
@@ -1285,6 +1293,7 @@ id media_actions
 id message
 id middle
 id mini
+id minus_button
 id mobile_navigation
 id mod
 id mtrl_child_content_container
@@ -1305,6 +1314,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id ok_button
 id order
 id outline
 id packed
@@ -1314,6 +1324,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id plus_button
 id proceed_btn
 id profile
 id progress_circular
@@ -1498,6 +1509,7 @@ layout activity_main2
 layout activity_recharge
 layout activity_signup
 layout activity_verification
+layout cartviweholder
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1512,6 +1524,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_add_to_cart
 layout fragment_balance
 layout fragment_cart
 layout fragment_home
@@ -1553,6 +1566,7 @@ mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation mobile_navigation
 raw zxing_beep
+string _0
 string a
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -1593,11 +1607,13 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_to_cart
 string already_signed_up_log_in_to_your_account
 string app_name
 string appbar_scrolling_view_behavior
 string bdt
 string bottom_sheet_behavior
+string cancel
 string change_display_name
 string character_counter_content_description
 string character_counter_pattern
@@ -1641,6 +1657,8 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
+string hyphen
+string item_name
 string khichuri
 string khichuri_25_bdt
 string lentil
@@ -1660,6 +1678,7 @@ string nav_app_bar_open_drawer_description
 string navigation_drawer_close
 string navigation_drawer_open
 string nmae
+string ok
 string one
 string order
 string password
@@ -1679,6 +1698,7 @@ string resend_verification_link
 string rice
 string rice_20_bdt
 string search_menu_title
+string select_amount
 string settings
 string sign_up
 string six

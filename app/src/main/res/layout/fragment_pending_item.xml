@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="pending Item fragment"
+        android:text="Pending Orders fragment"
         android:textSize="50dp"
         android:layout_centerInParent="true"/>
 

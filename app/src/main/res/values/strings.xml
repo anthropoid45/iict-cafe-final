@@ -59,4 +59,11 @@
     <string name="nmae">Nmae</string>
     <string name="name">Name</string>
     <string name="price">Price</string>
+    <string name="hyphen">-</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="select_amount">Select Amount</string>
+    <string name="_0">0</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="item_name">Item name</string>
 </resources>
