@@ -320,7 +320,7 @@ public class CartActivity extends AppCompatActivity {
             }
         });
 
-        proceed_btn.setOnClickListener(new View.OnClickListener() {
+        /*proceed_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -376,7 +376,7 @@ public class CartActivity extends AppCompatActivity {
                                                                 order.setDisplay_name(display_name);
                                                                 order.setUid(user.getUid());
 
-                                                                /*HashMap<String, Object> order = new HashMap<>();
+                                                                *//*HashMap<String, Object> order = new HashMap<>();
                                                                 order.put("rice", rice_cnt);
                                                                 order.put("chicken", chicken_cnt);
                                                                 order.put("pudding", pudding_cnt);
@@ -385,7 +385,7 @@ public class CartActivity extends AppCompatActivity {
                                                                 order.put("lentil", lentil_cnt);
                                                                 order.put("table_no", tableno);
                                                                 order.put("display_name", display_name);
-                                                                order.put("uid", user.getUid());*/
+                                                                order.put("uid", user.getUid());*//*
 
                                                                 DatabaseReference newref =  FirebaseDatabase.getInstance().getReference().child("orders");
                                                                 final String oid = newref.getKey();
@@ -476,7 +476,7 @@ public class CartActivity extends AppCompatActivity {
 
 
             }
-        });
+        });*/
 
 
     }

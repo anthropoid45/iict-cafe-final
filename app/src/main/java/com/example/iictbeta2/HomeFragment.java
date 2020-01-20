@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.iictbeta2.JavaClasses.CartItems;
 import com.example.iictbeta2.JavaClasses.DataDemo;
 import com.example.iictbeta2.JavaClasses.DataViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -33,7 +34,7 @@ public class HomeFragment extends Fragment {
     private RecyclerView recyclerView;
     private DatabaseReference ref;
 
-    Integer amount = 0;
+    Integer amount = 0, price;
 
     private TextView amountView, itenNameView;
     private AlertDialog.Builder mBuilder;
@@ -73,7 +74,8 @@ public class HomeFragment extends Fragment {
                         final String itemName = dataDemo.getItem_name();
                         final String itemID = dataDemo.getItem_id();
                         dataViewHolder.nameView.setText(itemName);
-                        dataViewHolder.priceView.setText(dataDemo.getPrice());
+                        final Integer price = dataDemo.getPrice();
+                        dataViewHolder.priceView.setText(price.toString() + " Taka");
                         dataViewHolder.addToCart.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
@@ -137,24 +139,18 @@ public class HomeFragment extends Fragment {
                                         if(amount > 0){
                                             final String uid = FirebaseAuth.getInstance().getUid();
 
+                                            CartItems cartItems = new CartItems();
+                                            cartItems.setAmount(amount);
+                                            cartItems.setItem_id(itemID);
+                                            cartItems.setPrice(price);
+                                            cartItems.setItem_name(itemName);
+
                                             FirebaseDatabase.getInstance().getReference().child("cart").child(uid)
-                                                    .child(itemID).child("amount").setValue(amount).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                    .child(itemID).setValue(cartItems).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                 @Override
                                                 public void onComplete(@NonNull Task<Void> task) {
                                                     if(task.isSuccessful()){
-                                                        FirebaseDatabase.getInstance().getReference().child("cart").child(uid)
-                                                                .child(itemID).child("item_name").setValue(itemName).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                                            @Override
-                                                            public void onComplete(@NonNull Task<Void> task) {
-                                                                if(task.isSuccessful()){
-                                                                    Toast.makeText(getActivity(), "Item added to your cart", Toast.LENGTH_LONG).show();
-                                                                    alertDialog.dismiss();
-                                                                } else {
-                                                                    Toast.makeText(getActivity(), "Something is wrong, try again.", Toast.LENGTH_LONG).show();
-                                                                }
-                                                            }
-                                                        });
-                                                        //Toast.makeText(getActivity(), "Item added to your cart", Toast.LENGTH_LONG).show();
+                                                        Toast.makeText(getActivity(), "Item added to your cart", Toast.LENGTH_LONG).show();
                                                         alertDialog.dismiss();
                                                     } else {
                                                         Toast.makeText(getActivity(), "Something is wrong, try again.", Toast.LENGTH_LONG).show();

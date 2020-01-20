@@ -66,4 +66,6 @@
     <string name="ok">OK</string>
     <string name="cancel">CANCEL</string>
     <string name="item_name">Item name</string>
+    <string name="total_0_taka">Total = 0 Taka</string>
+    <string name="place_order">place order</string>
 </resources>

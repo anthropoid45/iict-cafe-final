@@ -1091,7 +1091,10 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_account_balance_wallet_black_24dp
+drawable ic_clear_black_24dp
+drawable ic_create_black_24dp
 drawable ic_dashboard_black_24dp
+drawable ic_done_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1189,6 +1192,7 @@ id chicken_quantity
 id chicken_sub_btn
 id chickenlayout
 id chronometer
+id clear_item_button
 id clip_horizontal
 id clip_vertical
 id collapseActionView
@@ -1214,6 +1218,7 @@ id editTextConfirmPass
 id editTextEmail
 id editTextName
 id editTextPass
+id edit_item_button
 id edit_query
 id eggcurry_add_btn
 id eggcurry_quantity
@@ -1324,6 +1329,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id place_order_button
 id plus_button
 id proceed_btn
 id profile
@@ -1392,6 +1398,7 @@ id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
+id subtotal_view
 id tabMode
 id table
 id tableno
@@ -1687,6 +1694,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string place_order
 string plus
 string price
 string proceed
@@ -1712,6 +1720,7 @@ string title_home
 string title_notifications
 string todo
 string total
+string total_0_taka
 string two
 string zero
 string zxing_app_name

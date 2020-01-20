@@ -2,7 +2,7 @@ package com.example.iictbeta2.JavaClasses;
 
 public class DataDemo {
     public String item_name;
-    public String price;
+    public Integer price;
 
     public String getItem_id() {
         return item_id;
@@ -22,11 +22,11 @@ public class DataDemo {
         this.item_name = item_name;
     }
 
-    public String getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
 }
