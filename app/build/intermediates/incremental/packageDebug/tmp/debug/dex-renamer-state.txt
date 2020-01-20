@@ -1,4 +1,4 @@
-#Tue Jan 21 03:13:10 BDT 2020
+#Tue Jan 21 04:02:28 BDT 2020
 base.0=C\:\\Users\\Towsif\\StudioProjects\\IICT_Cafe\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

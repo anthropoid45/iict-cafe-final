@@ -106,8 +106,63 @@ public class CartFragment extends Fragment {
                                                     .addValueEventListener(new ValueEventListener() {
                                                         @Override
                                                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                                                            for(DataSnapshot ds: dataSnapshot.getChildren()){
+                                                            order_string = "";
+                                                            int n = (int) dataSnapshot.getChildrenCount();
 
+                                                            for(DataSnapshot ds: dataSnapshot.getChildren()){
+                                                                Map<String, Object> map = (Map<String, Object>) ds.getValue();
+                                                                Object obj1 = map.get("item_name");
+                                                                Object obj2 = map.get("amount");
+                                                                itemName = obj1.toString();
+                                                                amount = Integer.parseInt(String.valueOf(obj2));
+
+                                                                order_string += itemName + "  x" + amount.toString() + "\n";
+                                                                flag2++;
+
+                                                                if(flag2 == n){
+                                                                    order_string += "Total = " + subtotal.toString() + " Taka";
+                                                                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
+                                                                    String msg = order_string;
+                                                                    builder.setTitle("Order Details").setMessage(msg)
+                                                                            .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                                                                                @Override
+                                                                                public void onClick(DialogInterface dialog, int which) {
+                                                                                    //ref.child(item_id).removeValue();
+                                                                                    OrderDetails order = new OrderDetails();
+                                                                                    order.setUid(FirebaseAuth.getInstance().getUid());
+                                                                                    order.setDisplay_name(display_name);
+                                                                                    order.setTable_no("5");
+
+                                                                                    String oid = FirebaseDatabase.getInstance().getReference()
+                                                                                            .child("orders").push().getKey();
+
+                                                                                    order.setOid(oid);
+
+                                                                                    FirebaseDatabase.getInstance().getReference()
+                                                                                            .child("orders").child(oid).setValue(order)
+                                                                                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                                                                @Override
+                                                                                                public void onComplete(@NonNull Task<Void> task) {
+                                                                                                    if(task.isSuccessful()){
+
+                                                                                                    } else {
+
+                                                                                                    }
+                                                                                                }
+                                                                                            });
+                                                                                }
+                                                                            })
+                                                                            .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                                                                                @Override
+                                                                                public void onClick(DialogInterface dialog, int which) {
+                                                                                    dialog.dismiss();
+                                                                                }
+                                                                            });
+
+                                                                    AlertDialog dialog = builder.create();
+                                                                    dialog.show();
+                                                                }
                                                             }
                                                         }
 
