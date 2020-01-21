@@ -286,31 +286,40 @@
 151            android:value="@integer/google_play_services_version" />
 151-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\4b77dd00f4d416e1a1dd7baa472bc2ef\jetified-play-services-basement-16.2.0\AndroidManifest.xml:25:13-66
 152
-153        <activity
-153-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:46:9-52:63
-154            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-154-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:47:13-74
-155            android:clearTaskOnLaunch="true"
-155-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:48:13-45
-156            android:screenOrientation="sensorLandscape"
-156-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:49:13-56
-157            android:stateNotNeeded="true"
-157-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:50:13-42
-158            android:theme="@style/zxing_CaptureTheme"
-158-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:51:13-54
-159            android:windowSoftInputMode="stateAlwaysHidden" />
-159-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:52:13-60
-160
-161        <provider
-161-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-162            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-162-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-163            android:authorities="com.example.iictbeta2.lifecycle-process"
-163-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-164            android:exported="false"
-164-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-165            android:multiprocess="true" />
-165-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-166    </application>
-167
-168</manifest>
+153        <provider
+153-->[com.squareup.picasso:picasso:2.71828] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\55f9ef61fc54bbd7f6ed7e83b7122fb4\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+154            android:name="com.squareup.picasso.PicassoProvider"
+154-->[com.squareup.picasso:picasso:2.71828] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\55f9ef61fc54bbd7f6ed7e83b7122fb4\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+155            android:authorities="com.example.iictbeta2.com.squareup.picasso"
+155-->[com.squareup.picasso:picasso:2.71828] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\55f9ef61fc54bbd7f6ed7e83b7122fb4\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+156            android:exported="false" />
+156-->[com.squareup.picasso:picasso:2.71828] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\55f9ef61fc54bbd7f6ed7e83b7122fb4\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+157
+158        <activity
+158-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:46:9-52:63
+159            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+159-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:47:13-74
+160            android:clearTaskOnLaunch="true"
+160-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:48:13-45
+161            android:screenOrientation="sensorLandscape"
+161-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:49:13-56
+162            android:stateNotNeeded="true"
+162-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:50:13-42
+163            android:theme="@style/zxing_CaptureTheme"
+163-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:51:13-54
+164            android:windowSoftInputMode="stateAlwaysHidden" />
+164-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\8d1790476154ac805b372406bad3fc10\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:52:13-60
+165
+166        <provider
+166-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+167            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+167-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+168            android:authorities="com.example.iictbeta2.lifecycle-process"
+168-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+169            android:exported="false"
+169-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+170            android:multiprocess="true" />
+170-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Towsif\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+171    </application>
+172
+173</manifest>

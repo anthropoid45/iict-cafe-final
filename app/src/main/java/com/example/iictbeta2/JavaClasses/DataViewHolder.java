@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.iictbeta2.R;
+import com.squareup.picasso.Picasso;
 
 public class DataViewHolder extends RecyclerView.ViewHolder {
 
@@ -22,5 +23,9 @@ public class DataViewHolder extends RecyclerView.ViewHolder {
         priceView = itemView.findViewById(R.id.card_price);
         imageView = itemView.findViewById(R.id.card_image);
         addToCart = itemView.findViewById(R.id.addToCart);
+    }
+
+    public void setImageView(String image){
+        Picasso.get().load(image).into(imageView);
     }
 }

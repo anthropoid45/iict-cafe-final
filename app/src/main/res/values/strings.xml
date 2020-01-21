@@ -68,4 +68,6 @@
     <string name="item_name">Item name</string>
     <string name="total_0_taka">Total = 0 Taka</string>
     <string name="place_order">place order</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="enter_table_no">Enter Table No.:</string>
 </resources>

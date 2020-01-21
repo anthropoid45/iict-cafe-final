@@ -74,6 +74,7 @@ public class HomeFragment extends Fragment {
                         final String itemName = dataDemo.getItem_name();
                         final String itemID = dataDemo.getItem_id();
                         dataViewHolder.nameView.setText(itemName);
+                        dataViewHolder.setImageView(dataDemo.getImage_url());
                         final Integer price = dataDemo.getPrice();
                         dataViewHolder.priceView.setText(price.toString() + " Taka");
                         dataViewHolder.addToCart.setOnClickListener(new View.OnClickListener() {

@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,8 +42,9 @@ public class CartFragment extends Fragment {
     private DatabaseReference ref;
     private Integer amount, curr_balance, total, flag1 = 0, flag2 = 0, subtotal;
     private String order_string = "", display_name, table_no, itemName;
-    private TextView amountView, itemNameView, subtotalview;
-    private Button place_order;
+    private TextView amountView, itemNameView, subtotalview, orderStringView;
+    private EditText tableEdit;
+    private Button place_order, okButton, cancelButton;
     private AlertDialog.Builder mBuilder;
     private View mView;
 
@@ -97,7 +99,7 @@ public class CartFragment extends Fragment {
 
                                     if(flag1 == 2){
 
-                                        Toast.makeText(getActivity(), "Aise" + curr_balance.toString(), Toast.LENGTH_LONG).show();
+                                        //Toast.makeText(getActivity(), "Aise" + curr_balance.toString(), Toast.LENGTH_LONG).show();
 
                                         if(curr_balance > subtotal && subtotal > 0) {
 
@@ -120,8 +122,67 @@ public class CartFragment extends Fragment {
                                                                 flag2++;
 
                                                                 if(flag2 == n){
-                                                                    order_string += "Total = " + subtotal.toString() + " Taka";
-                                                                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                                                                    order_string += "\nTotal = " + subtotal.toString() + " Taka";
+
+                                                                    mBuilder = new AlertDialog.Builder(getContext());
+                                                                    mView = getLayoutInflater().inflate(R.layout.dialog_confirm_order, null);
+                                                                    orderStringView = mView.findViewById(R.id.order_details_view);
+                                                                    tableEdit = mView.findViewById(R.id.table_edit);
+                                                                    okButton = mView.findViewById(R.id.ok_button);
+                                                                    cancelButton = mView.findViewById(R.id.cancel_button);
+
+                                                                    orderStringView.setText(order_string);
+
+                                                                    mBuilder.setView(mView);
+                                                                    final AlertDialog alertDialog = mBuilder.create();
+                                                                    alertDialog.show();
+
+                                                                    okButton.setOnClickListener(new View.OnClickListener() {
+                                                                        @Override
+                                                                        public void onClick(View v) {
+
+                                                                            String tableno = tableEdit.getText().toString();
+
+                                                                            if(!tableno.isEmpty()) {
+
+                                                                                OrderDetails order = new OrderDetails();
+                                                                                order.setUid(FirebaseAuth.getInstance().getUid());
+                                                                                order.setDisplay_name(display_name);
+                                                                                order.setTable_no(tableno);
+
+                                                                                String oid = FirebaseDatabase.getInstance().getReference()
+                                                                                        .child("orders").push().getKey();
+
+                                                                                order.setOid(oid);
+
+                                                                                FirebaseDatabase.getInstance().getReference()
+                                                                                        .child("orders").child(oid).setValue(order)
+                                                                                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                                                            @Override
+                                                                                            public void onComplete(@NonNull Task<Void> task) {
+                                                                                                if (task.isSuccessful()) {
+                                                                                                    Toast.makeText(getActivity(), "Order placed successfully", Toast.LENGTH_LONG).show();
+                                                                                                    alertDialog.dismiss();
+                                                                                                } else {
+                                                                                                    Toast.makeText(getActivity(), "Something went wrong. Please try again!" + curr_balance.toString(), Toast.LENGTH_LONG).show();
+                                                                                                }
+                                                                                            }
+                                                                                        });
+                                                                            } else {
+                                                                                Toast.makeText(getActivity(), "Please enter your table no.", Toast.LENGTH_LONG).show();
+                                                                            }
+                                                                        }
+                                                                    });
+
+                                                                    cancelButton.setOnClickListener(new View.OnClickListener() {
+                                                                        @Override
+                                                                        public void onClick(View v) {
+                                                                            alertDialog.dismiss();
+                                                                        }
+                                                                    });
+
+
+                                                                    /*AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
                                                                     String msg = order_string;
                                                                     builder.setTitle("Order Details").setMessage(msg)
@@ -161,7 +222,7 @@ public class CartFragment extends Fragment {
                                                                             });
 
                                                                     AlertDialog dialog = builder.create();
-                                                                    dialog.show();
+                                                                    dialog.show();*/
                                                                 }
                                                             }
                                                         }

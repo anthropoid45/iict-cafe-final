@@ -1321,6 +1321,7 @@ id notification_main_column
 id notification_main_column_container
 id ok_button
 id order
+id order_details_view
 id outline
 id packed
 id parallax
@@ -1401,6 +1402,7 @@ id submit_area
 id subtotal_view
 id tabMode
 id table
+id table_edit
 id tableno
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -1532,6 +1534,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dialog_add_to_cart
+layout dialog_confirm_order
 layout fragment_balance
 layout fragment_cart
 layout fragment_home
@@ -1644,12 +1647,14 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string confirm_order
 string confirm_password
 string current_balance
 string default_web_client_id
 string egg_curry
 string egg_curry_20_bdt
 string email
+string enter_table_no
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
